@@ -790,8 +790,8 @@ class Detections:
     def show(self, labels=True):
         self._run(show=True, labels=labels)  # show results
 
-    def save(self, labels=True, save_dir='runs/detect/exp', exist_ok=False):
-        #save_dir = increment_path(save_dir, exist_ok, mkdir=False)  # increment save_dir
+    def save(self, labels=True, save_dir='Detected Cars/', exist_ok=False):
+        save_dir = increment_path(save_dir, exist_ok, mkdir=False)  # increment save_dir
         self._run(save=True, labels=labels, save_dir=save_dir)  # save results
 
     def crop(self, save=True, save_dir='runs/detect/exp', exist_ok=False):
